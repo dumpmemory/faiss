@@ -12044,6 +12044,7 @@
     <member refid="namespacefaiss_1aa2a1c19599e8fc0b8a3025d3386637b8" kind="function"><name>fourcc_inv</name></member>
     <member refid="namespacefaiss_1a69918e43b65345fc718a09e689b472b3" kind="function"><name>fourcc_inv</name></member>
     <member refid="namespacefaiss_1a6c6a3be441dd00c6c837d7547b1df4e8" kind="function"><name>fourcc_inv_printable</name></member>
+    <member refid="namespacefaiss_1a203886fbc91500a6ab7d95cc0bdd9863" kind="function"><name>get_deserialization_vector_byte_limit</name></member>
     <member refid="namespacefaiss_1a11ce544f3b395e398be8f6d83ea6cddc" kind="function"><name>smawk</name></member>
     <member refid="namespacefaiss_1a613c867df3afeba8421d7ca1200e7529" kind="function"><name>kmeans1d</name></member>
     <member refid="namespacefaiss_1ae753c3918c4698ce7ad1eacb25b9c574" kind="function"><name>operator==</name></member>
@@ -12144,6 +12145,7 @@
     <member refid="namespacefaiss_1afe18d8b6b6b55ae7468bed708ac58a44" kind="function"><name>read_InvertedLists_up</name></member>
     <member refid="namespacefaiss_1a33ffe9525bdb0b573df38b7725672149" kind="function"><name>get_deserialization_loop_limit</name></member>
     <member refid="namespacefaiss_1a8fcd963a2d62d0ee1adf38c6d54f289e" kind="function"><name>set_deserialization_loop_limit</name></member>
+    <member refid="namespacefaiss_1a660b1cfd7e024895170604ced06298c5" kind="function"><name>set_deserialization_vector_byte_limit</name></member>
     <member refid="namespacefaiss_1a4f08bb0a568c3f8cd7c5381be1e58ada" kind="function"><name>initialize_IVFPQ_precomputed_table</name></member>
     <member refid="namespacefaiss_1aaa38f721404f4610f50d04ab0a01ad28" kind="function"><name>lo_build</name></member>
     <member refid="namespacefaiss_1afe521d71f2a4dd6a99b0a5d9fbe19787" kind="function"><name>lo_listno</name></member>
@@ -12535,7 +12537,7 @@
     <member refid="namespacefaiss_1_1gpu_1a44bd51d4a1b6c300dbb9ac2192dce14b" kind="function"><name>compareLists</name></member>
     <member refid="namespacefaiss_1_1gpu_1a589a55d85f293c1ed9905e5aac936776" kind="function"><name>testIVFEquality</name></member>
     <member refid="namespacefaiss_1_1gpu_1a0e7259c8fad696cd1c584575b1acf981" kind="function"><name>convert_to_bitset</name></member>
-    <member refid="namespacefaiss_1_1gpu_1a4ad217abc64c139f6788145db3b4b4b6" kind="function"><name>metricFaissToCuvs</name></member>
+    <member refid="namespacefaiss_1_1gpu_1abd145b4a4f9a03963167367460b4fe7a" kind="function"><name>metricFaissToCuvs</name></member>
     <member refid="namespacefaiss_1_1gpu_1a96b52c4a7d364a661afad37f4a75adfb" kind="function"><name>validRowIndices</name></member>
     <member refid="namespacefaiss_1_1gpu_1a3cc563a7cb538b461187b53cc29188ac" kind="function"><name>inplaceGatherFilteredRows</name></member>
     <member refid="namespacefaiss_1_1gpu_1a18ddaf734a629ded5ad2a2f235937298" kind="function"><name>getCurrentDevice</name></member>
