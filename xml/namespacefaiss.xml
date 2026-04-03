@@ -217,6 +217,7 @@
     <innerclass refid="structfaiss_1_1MatrixStats" prot="public">faiss::MatrixStats</innerclass>
     <innerclass refid="structfaiss_1_1MaybeOwnedVector" prot="public">faiss::MaybeOwnedVector</innerclass>
     <innerclass refid="structfaiss_1_1MaybeOwnedVectorOwner" prot="public">faiss::MaybeOwnedVectorOwner</innerclass>
+    <innerclass refid="structfaiss_1_1MinimaxHeap" prot="public">faiss::MinimaxHeap</innerclass>
     <innerclass refid="structfaiss_1_1MmappedFileMappingOwner" prot="public">faiss::MmappedFileMappingOwner</innerclass>
     <innerclass refid="structfaiss_1_1MultiIndexQuantizer" prot="public">faiss::MultiIndexQuantizer</innerclass>
     <innerclass refid="structfaiss_1_1MultiIndexQuantizer2" prot="public">faiss::MultiIndexQuantizer2</innerclass>
@@ -1060,7 +1061,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/HNSW.h" line="277" column="28" declfile="faiss/impl/HNSW.h" declline="277" declcolumn="28"/>
+        <location file="faiss/impl/HNSW.h" line="251" column="28" declfile="faiss/impl/HNSW.h" declline="251" declcolumn="28"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1a4fc6a57cef02014744082168e2f62738" prot="public" static="no" extern="yes" mutable="no">
         <type>FAISS_API <ref refid="structfaiss_1_1PanoramaStats" kindref="compound">PanoramaStats</ref></type>
@@ -4145,7 +4146,7 @@
         </inbodydescription>
         <location file="faiss/impl/fast_scan/fast_scan.h" line="295" column="17" declfile="faiss/impl/fast_scan/fast_scan.h" declline="295" declcolumn="17"/>
       </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1aea93318a778529ad745e12672d338d0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacefaiss_1a7dc5133076fcb0c9f14a4674d0be5bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>SIMDLevel</type>
@@ -4155,7 +4156,7 @@
         </templateparamlist>
         <type>std::unique_ptr&lt; <ref refid="structfaiss_1_1FastScanCodeScanner" kindref="compound">FastScanCodeScanner</ref> &gt;</type>
         <definition>std::unique_ptr&lt; FastScanCodeScanner &gt; faiss::rabitq_ivf_make_knn_scanner_impl</definition>
-        <argsstring>(bool is_max, const IndexIVFRaBitQFastScan *index, size_t nq, size_t k, float *distances, int64_t *ids, const FastScanDistancePostProcessing *context, bool multi_bit)</argsstring>
+        <argsstring>(bool is_max, const IndexIVFRaBitQFastScan *index, size_t nq, size_t k, float *distances, int64_t *ids, const IDSelector *sel, const FastScanDistancePostProcessing *context, bool multi_bit)</argsstring>
         <name>rabitq_ivf_make_knn_scanner_impl</name>
         <qualifiedname>faiss::rabitq_ivf_make_knn_scanner_impl</qualifiedname>
         <param>
@@ -4183,6 +4184,10 @@
           <declname>ids</declname>
         </param>
         <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <param>
           <type>const <ref refid="structfaiss_1_1FastScanDistancePostProcessing" kindref="compound">FastScanDistancePostProcessing</ref> *</type>
           <declname>context</declname>
         </param>
@@ -4199,10 +4204,10 @@
         </inbodydescription>
         <location file="faiss/impl/fast_scan/fast_scan.h" line="308" column="17" declfile="faiss/impl/fast_scan/fast_scan.h" declline="308" declcolumn="17"/>
       </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a1735436937d7230c2fd79f9dfa4d6e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacefaiss_1aa09bd8ecad2830d3fecddfcbe61e222b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::unique_ptr&lt; <ref refid="structfaiss_1_1FastScanCodeScanner" kindref="compound">FastScanCodeScanner</ref> &gt;</type>
         <definition>std::unique_ptr&lt; FastScanCodeScanner &gt; faiss::rabitq_ivf_make_knn_scanner</definition>
-        <argsstring>(bool is_max, const IndexIVFRaBitQFastScan *index, size_t nq, size_t k, float *distances, int64_t *ids, const FastScanDistancePostProcessing *context, bool multi_bit)</argsstring>
+        <argsstring>(bool is_max, const IndexIVFRaBitQFastScan *index, size_t nq, size_t k, float *distances, int64_t *ids, const IDSelector *sel, const FastScanDistancePostProcessing *context, bool multi_bit)</argsstring>
         <name>rabitq_ivf_make_knn_scanner</name>
         <qualifiedname>faiss::rabitq_ivf_make_knn_scanner</qualifiedname>
         <param>
@@ -4230,6 +4235,10 @@
           <declname>ids</declname>
         </param>
         <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <param>
           <type>const <ref refid="structfaiss_1_1FastScanDistancePostProcessing" kindref="compound">FastScanDistancePostProcessing</ref> *</type>
           <declname>context</declname>
         </param>
@@ -4244,7 +4253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/fast_scan/fast_scan.h" line="319" column="17" declfile="faiss/impl/fast_scan/fast_scan.h" declline="319" declcolumn="17"/>
+        <location file="faiss/impl/fast_scan/fast_scan.h" line="320" column="17" declfile="faiss/impl/fast_scan/fast_scan.h" declline="320" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a9c768b846686f73773cd8c7370310ec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -4397,12 +4406,12 @@
         </inbodydescription>
         <location file="faiss/impl/fast_scan/rabitq_dispatching.h" line="1" column="0" bodyfile="faiss/impl/fast_scan/rabitq_dispatching.h" bodystart="35" bodyend="54"/>
       </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1aad98471b20584eb65131d7049e915a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacefaiss_1a2296c34f3219451c88e96e7a951e64c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
         </templateparamlist>
         <type>std::unique_ptr&lt; <ref refid="structfaiss_1_1FastScanCodeScanner" kindref="compound">FastScanCodeScanner</ref> &gt;</type>
         <definition>std::unique_ptr&lt; FastScanCodeScanner &gt; faiss::rabitq_ivf_make_knn_scanner_impl&lt; THE_LEVEL_TO_DISPATCH &gt;</definition>
-        <argsstring>(bool is_max, const IndexIVFRaBitQFastScan *index, size_t nq, size_t k, float *distances, int64_t *ids, const FastScanDistancePostProcessing *context, bool multi_bit)</argsstring>
+        <argsstring>(bool is_max, const IndexIVFRaBitQFastScan *index, size_t nq, size_t k, float *distances, int64_t *ids, const IDSelector *sel, const FastScanDistancePostProcessing *context, bool multi_bit)</argsstring>
         <name>rabitq_ivf_make_knn_scanner_impl&lt; THE_LEVEL_TO_DISPATCH &gt;</name>
         <qualifiedname>faiss::rabitq_ivf_make_knn_scanner_impl&lt; THE_LEVEL_TO_DISPATCH &gt;</qualifiedname>
         <param>
@@ -4430,6 +4439,10 @@
           <declname>ids</declname>
         </param>
         <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <param>
           <type>const <ref refid="structfaiss_1_1FastScanDistancePostProcessing" kindref="compound">FastScanDistancePostProcessing</ref> *</type>
           <declname>context</declname>
         </param>
@@ -4443,12 +4456,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/fast_scan/rabitq_dispatching.h" line="1" column="0" bodyfile="faiss/impl/fast_scan/rabitq_dispatching.h" bodystart="59" bodyend="79"/>
+        <location file="faiss/impl/fast_scan/rabitq_dispatching.h" line="1" column="0" bodyfile="faiss/impl/fast_scan/rabitq_dispatching.h" bodystart="59" bodyend="80"/>
       </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a72b1d0111cfe6137b5a67a5bc670e3f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacefaiss_1a5be80d29ca0583f942d3ccf479c30610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int faiss::search_from_candidates</definition>
-        <argsstring>(const HNSW &amp;hnsw, DistanceComputer &amp;qdis, ResultHandler &amp;res, HNSW::MinimaxHeap &amp;candidates, VisitedTable &amp;vt, HNSWStats &amp;stats, int level, int nres_in=0, const SearchParameters *params=nullptr)</argsstring>
+        <argsstring>(const HNSW &amp;hnsw, DistanceComputer &amp;qdis, ResultHandler &amp;res, MinimaxHeap &amp;candidates, VisitedTable &amp;vt, HNSWStats &amp;stats, int level, int nres_in=0, const SearchParameters *params=nullptr)</argsstring>
         <name>search_from_candidates</name>
         <qualifiedname>faiss::search_from_candidates</qualifiedname>
         <param>
@@ -4464,7 +4477,7 @@
           <declname>res</declname>
         </param>
         <param>
-          <type><ref refid="structfaiss_1_1HNSW_1_1MinimaxHeap" kindref="compound">HNSW::MinimaxHeap</ref> &amp;</type>
+          <type><ref refid="structfaiss_1_1MinimaxHeap" kindref="compound">MinimaxHeap</ref> &amp;</type>
           <declname>candidates</declname>
         </param>
         <param>
@@ -4495,12 +4508,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/HNSW.h" line="279" column="5" declfile="faiss/impl/HNSW.h" declline="279" declcolumn="5"/>
+        <location file="faiss/impl/HNSW.h" line="253" column="5" declfile="faiss/impl/HNSW.h" declline="253" declcolumn="5"/>
       </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a5a6ff3b3d4b0a632c286a9967c420718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacefaiss_1a03dfdaba71e91b32059e59ccf4e722a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int faiss::search_from_candidates_panorama</definition>
-        <argsstring>(const HNSW &amp;hnsw, const IndexHNSW *index, DistanceComputer &amp;qdis, ResultHandler &amp;res, HNSW::MinimaxHeap &amp;candidates, VisitedTable &amp;vt, HNSWStats &amp;stats, int level, int nres_in=0, const SearchParameters *params=nullptr)</argsstring>
+        <argsstring>(const HNSW &amp;hnsw, const IndexHNSW *index, DistanceComputer &amp;qdis, ResultHandler &amp;res, MinimaxHeap &amp;candidates, VisitedTable &amp;vt, HNSWStats &amp;stats, int level, int nres_in=0, const SearchParameters *params=nullptr)</argsstring>
         <name>search_from_candidates_panorama</name>
         <qualifiedname>faiss::search_from_candidates_panorama</qualifiedname>
         <param>
@@ -4520,7 +4533,7 @@
           <declname>res</declname>
         </param>
         <param>
-          <type><ref refid="structfaiss_1_1HNSW_1_1MinimaxHeap" kindref="compound">HNSW::MinimaxHeap</ref> &amp;</type>
+          <type><ref refid="structfaiss_1_1MinimaxHeap" kindref="compound">MinimaxHeap</ref> &amp;</type>
           <declname>candidates</declname>
         </param>
         <param>
@@ -4552,7 +4565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/HNSW.h" line="294" column="5" declfile="faiss/impl/HNSW.h" declline="294" declcolumn="5"/>
+        <location file="faiss/impl/HNSW.h" line="268" column="5" declfile="faiss/impl/HNSW.h" declline="268" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ad5378e0f1958868c1170b8552b44fc31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structfaiss_1_1HNSWStats" kindref="compound">HNSWStats</ref></type>
@@ -4586,7 +4599,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/HNSW.h" line="306" column="11" declfile="faiss/impl/HNSW.h" declline="306" declcolumn="11"/>
+        <location file="faiss/impl/HNSW.h" line="280" column="11" declfile="faiss/impl/HNSW.h" declline="280" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a7fcc71c4eb814ea582ad9ffb0c909d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::priority_queue&lt; HNSW::Node &gt;</type>
@@ -4624,7 +4637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/HNSW.h" line="313" column="21" declfile="faiss/impl/HNSW.h" declline="313" declcolumn="21"/>
+        <location file="faiss/impl/HNSW.h" line="287" column="21" declfile="faiss/impl/HNSW.h" declline="287" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ad97c6c4a248bc0ac4399e4f0eea2ff99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4671,7 +4684,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/HNSW.h" line="321" column="6" declfile="faiss/impl/HNSW.h" declline="321" declcolumn="6"/>
+        <location file="faiss/impl/HNSW.h" line="295" column="6" declfile="faiss/impl/HNSW.h" declline="295" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a97af3c36835c195254ba0312b0f78140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
