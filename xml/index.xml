@@ -4181,6 +4181,7 @@
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1af6472b930c49e5297d37a28d719279a5" kind="function"><name>IndexIVFAdditiveQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a88114160b397addc576426fc61773c42" kind="function"><name>~IndexIVFAdditiveQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a746d32b81773a8ae805d7f7215c11f77" kind="function"><name>IndexIVFAdditiveQuantizerFastScan</name></member>
+    <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1af6e60ad43cdcb4e058e404c441946d99" kind="function"><name>fast_scan_code_size</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a648b31c6d8c58265289a117f1030a296" kind="function"><name>train_encoder</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1aca35e006da2c5d000279b5346e658491" kind="function"><name>train_encoder_num_vectors</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a52bb1f435966c96dc41f7a318084ec84" kind="function"><name>estimate_norm_scale</name></member>
@@ -4307,6 +4308,7 @@
     <member refid="structfaiss_1_1IndexIVFFastScan_1a4e603b2bfcb0831c0f065b3e22f8a23a" kind="function"><name>get_CodePacker</name></member>
     <member refid="structfaiss_1_1IndexIVFFastScan_1a50cac5c5e31a457925af44f6e518199f" kind="function"><name>reconstruct_orig_invlists</name></member>
     <member refid="structfaiss_1_1IndexIVFFastScan_1a0f23ffc33cf0de396080f9c07888f9ca" kind="function"><name>sa_decode</name></member>
+    <member refid="structfaiss_1_1IndexIVFFastScan_1af4de48c7756175cc634e6de997e6e6c2" kind="function"><name>fast_scan_code_size</name></member>
     <member refid="structfaiss_1_1IndexIVFFastScan_1ac2cb20a1886204e87453b2816dc99d07" kind="function"><name>get_block_stride</name></member>
     <member refid="structfaiss_1_1IndexIVFFastScan_1abc04b8b26a8bd6e1e0bc156dcb52f34e" kind="function"><name>postprocess_packed_codes</name></member>
     <member refid="structfaiss_1_1IndexIVF_1a47a3b7665e9d2be41c6d3b2e9144b73f" kind="function"><name>reset</name></member>
@@ -4776,6 +4778,7 @@
     <member refid="structfaiss_1_1IndexIVFLocalSearchQuantizerFastScan_1a68fab32d9138e95af6ff18fc1d14587c" kind="function"><name>IndexIVFLocalSearchQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFLocalSearchQuantizerFastScan_1a7f182d9e3a3edc81d70fd857ab33b630" kind="function"><name>IndexIVFLocalSearchQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1ae1aafe02dc541509b27409f9b53c957e" kind="function"><name>init</name></member>
+    <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1af6e60ad43cdcb4e058e404c441946d99" kind="function"><name>fast_scan_code_size</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a648b31c6d8c58265289a117f1030a296" kind="function"><name>train_encoder</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1aca35e006da2c5d000279b5346e658491" kind="function"><name>train_encoder_num_vectors</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a52bb1f435966c96dc41f7a318084ec84" kind="function"><name>estimate_norm_scale</name></member>
@@ -4977,6 +4980,7 @@
     <member refid="structfaiss_1_1IndexIVFPQFastScan_1aef41b63524189a9260b1e36bb2419478" kind="function"><name>IndexIVFPQFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFPQFastScan_1a20cad56251854fe70420dcacd4e7faba" kind="function"><name>IndexIVFPQFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFPQFastScan_1a8debc8d0dffd4d8c4a99c8a01f878470" kind="function"><name>IndexIVFPQFastScan</name></member>
+    <member refid="structfaiss_1_1IndexIVFPQFastScan_1ad9135f721737cf6ee60586bfd6ccac63" kind="function"><name>fast_scan_code_size</name></member>
     <member refid="structfaiss_1_1IndexIVFPQFastScan_1a08ee6a05220e602c8b654aaf5e77b2b3" kind="function"><name>train_encoder</name></member>
     <member refid="structfaiss_1_1IndexIVFPQFastScan_1a3ce2ef1e6c7902eea286754076372dcc" kind="function"><name>train_encoder_num_vectors</name></member>
     <member refid="structfaiss_1_1IndexIVFPQFastScan_1a6654ef6db78fbf4c9c2904921820dded" kind="function"><name>precompute_table</name></member>
@@ -5272,6 +5276,7 @@
     <member refid="structfaiss_1_1IndexIVFProductLocalSearchQuantizerFastScan_1adbcfc671a92430367f48f69021d3922e" kind="function"><name>IndexIVFProductLocalSearchQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFProductLocalSearchQuantizerFastScan_1a3c28d23cc563164d14045127d7cb3112" kind="function"><name>IndexIVFProductLocalSearchQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1ae1aafe02dc541509b27409f9b53c957e" kind="function"><name>init</name></member>
+    <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1af6e60ad43cdcb4e058e404c441946d99" kind="function"><name>fast_scan_code_size</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a648b31c6d8c58265289a117f1030a296" kind="function"><name>train_encoder</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1aca35e006da2c5d000279b5346e658491" kind="function"><name>train_encoder_num_vectors</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a52bb1f435966c96dc41f7a318084ec84" kind="function"><name>estimate_norm_scale</name></member>
@@ -5467,6 +5472,7 @@
     <member refid="structfaiss_1_1IndexIVFProductResidualQuantizerFastScan_1ae6c951e874c4e09e0760fe6d18a60b58" kind="function"><name>IndexIVFProductResidualQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFProductResidualQuantizerFastScan_1ae82a8bde783e56f64992c1fd58028f42" kind="function"><name>IndexIVFProductResidualQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1ae1aafe02dc541509b27409f9b53c957e" kind="function"><name>init</name></member>
+    <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1af6e60ad43cdcb4e058e404c441946d99" kind="function"><name>fast_scan_code_size</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a648b31c6d8c58265289a117f1030a296" kind="function"><name>train_encoder</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1aca35e006da2c5d000279b5346e658491" kind="function"><name>train_encoder_num_vectors</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a52bb1f435966c96dc41f7a318084ec84" kind="function"><name>estimate_norm_scale</name></member>
@@ -5662,6 +5668,7 @@
     <member refid="structfaiss_1_1IndexIVFRaBitQFastScan_1a51b5d8ab24ed009c4c9830e8e112027f" kind="function"><name>IndexIVFRaBitQFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFRaBitQFastScan_1a0140783b48115a1596c486ce0738966f" kind="function"><name>train_encoder</name></member>
     <member refid="structfaiss_1_1IndexIVFRaBitQFastScan_1aab365da27d3d8796efeb2569dd23dd2f" kind="function"><name>encode_vectors</name></member>
+    <member refid="structfaiss_1_1IndexIVFRaBitQFastScan_1a31114342427ce415bd6a7dca6bffb102" kind="function"><name>fast_scan_code_size</name></member>
     <member refid="structfaiss_1_1IndexIVFRaBitQFastScan_1a8f64f50f916f47b8cc59223fd3a46d55" kind="function"><name>get_CodePacker</name></member>
     <member refid="structfaiss_1_1IndexIVFRaBitQFastScan_1a0a2d2c7a21d05b56c573e5d8f66b2019" kind="function"><name>postprocess_packed_codes</name></member>
     <member refid="structfaiss_1_1IndexIVFRaBitQFastScan_1a37704d0bc79d9511db2032109d637555" kind="function"><name>reconstruct_from_offset</name></member>
@@ -5855,6 +5862,7 @@
     <member refid="structfaiss_1_1IndexIVFResidualQuantizerFastScan_1ae08d9a2886b46232c1b13b754e8e471a" kind="function"><name>IndexIVFResidualQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFResidualQuantizerFastScan_1a4dacb3272c8fccca4d2a14aa99cc2b16" kind="function"><name>IndexIVFResidualQuantizerFastScan</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1ae1aafe02dc541509b27409f9b53c957e" kind="function"><name>init</name></member>
+    <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1af6e60ad43cdcb4e058e404c441946d99" kind="function"><name>fast_scan_code_size</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a648b31c6d8c58265289a117f1030a296" kind="function"><name>train_encoder</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1aca35e006da2c5d000279b5346e658491" kind="function"><name>train_encoder_num_vectors</name></member>
     <member refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a52bb1f435966c96dc41f7a318084ec84" kind="function"><name>estimate_norm_scale</name></member>
@@ -12099,7 +12107,7 @@
     <member refid="namespacefaiss_1a1c1a7ffff3e34768b027b77d0d9f96df" kind="variable"><name>hamming_batch_size</name></member>
     <member refid="namespacefaiss_1a807d8fdc887adb34ff028c3ccaeb1fe1" kind="variable"><name>hamdis_tab_ham_bytes</name></member>
     <member refid="namespacefaiss_1ae2bb09d8026f83d03936dcddee878a04" kind="variable"><name>partition_stats</name></member>
-    <member refid="namespacefaiss_1a96faf9c9761559a611b0b3098750506f" kind="variable"><name>SL</name></member>
+    <member refid="namespacefaiss_1a88687176f5191ba540e254e749b3cfed" kind="variable"><name>SL</name></member>
     <member refid="namespacefaiss_1a83ba55d434462e9120b5ad24bc36f768" kind="variable"><name>THE_SL</name></member>
     <member refid="namespacefaiss_1a19143c25e59cfe3cc3cf12f370b17643" kind="variable"><name>SINGLE_SIMD_LEVEL</name></member>
     <member refid="namespacefaiss_1aca360ba1cc6270b79a9228cdf3e63df5" kind="variable"><name>SINGLE_SIMD_LEVEL_256</name></member>
@@ -12447,6 +12455,9 @@
     <member refid="namespacefaiss_1afad6c999c4af7456ef9954f2f3021592" kind="function"><name>partition</name></member>
     <member refid="namespacefaiss_1a607e40148f9d63cc082cb0ed7cbdc1c2" kind="function"><name>simd_histogram_8</name></member>
     <member refid="namespacefaiss_1aff3bc91a0aef8d8aca171a67611b65a2" kind="function"><name>simd_histogram_16</name></member>
+    <member refid="namespacefaiss_1a2a091c2516e3380f5ad9c57dd1376a07" kind="function"><name>partition_fuzzy_simd</name></member>
+    <member refid="namespacefaiss_1ac4ef79296cd0b922f7eaabc4dd7fc081" kind="function"><name>simd_histogram_8</name></member>
+    <member refid="namespacefaiss_1a9f7722a6e7f33d96931585e70b339dcf" kind="function"><name>simd_histogram_16</name></member>
     <member refid="namespacefaiss_1a5044a6332355bfa866dda113f81e9602" kind="function"><name>float_rand</name></member>
     <member refid="namespacefaiss_1aa149aec8f65085773f664bb7b5884743" kind="function"><name>float_randn</name></member>
     <member refid="namespacefaiss_1aba416d6990d202bfc7eac244a7d874c8" kind="function"><name>int64_rand</name></member>
@@ -12483,6 +12494,12 @@
     <member refid="namespacefaiss_1a6d2ac818c8d058b1cc926a28fbd9e4ba" kind="function"><name>fvec_madd_and_argmin_sse</name></member>
     <member refid="namespacefaiss_1ad1b6ea1858c274ec9aed96539f5c0259" kind="function"><name>masked_read</name></member>
     <member refid="namespacefaiss_1aa0dbe6e1a44f8bf5ee8ecb7ef94161c2" kind="function"><name>exhaustive_L2sqr_blas_cmax</name></member>
+    <member refid="namespacefaiss_1a3a09e6b692b03d53b4fc07d9b6c8c5f2" kind="function"><name>partition_fuzzy_simd&lt; SL, CMax&lt; uint16_t, int64_t &gt; &gt;</name></member>
+    <member refid="namespacefaiss_1a365c7b264fd4da7aa79578276f96813d" kind="function"><name>partition_fuzzy_simd&lt; SL, CMin&lt; uint16_t, int64_t &gt; &gt;</name></member>
+    <member refid="namespacefaiss_1affbb8aa8afdebbd4b862b4bb17bc3abe" kind="function"><name>partition_fuzzy_simd&lt; SL, CMax&lt; uint16_t, int &gt; &gt;</name></member>
+    <member refid="namespacefaiss_1a01cfcf4776dc6fd86604fd28bbebc228" kind="function"><name>partition_fuzzy_simd&lt; SL, CMin&lt; uint16_t, int &gt; &gt;</name></member>
+    <member refid="namespacefaiss_1ae1e48fd083ff81b655dcb416f2b15d2e" kind="function"><name>simd_histogram_8&lt; SL &gt;</name></member>
+    <member refid="namespacefaiss_1a46042faedc4f69e954b48f7970576f43" kind="function"><name>simd_histogram_16&lt; SL &gt;</name></member>
     <member refid="namespacefaiss_1a5fdac0aa4da8e5008a9fb67ea5d091e5" kind="function"><name>simd_width</name></member>
     <member refid="namespacefaiss_1a79e514996c26613456730d2427a8a842" kind="function"><name>to_string</name></member>
     <member refid="namespacefaiss_1a119eb2565e7e64e0edc288c10cf35a73" kind="function"><name>to_simd_level</name></member>
@@ -12532,6 +12549,8 @@
   <compound refid="namespacefaiss_1_1_0d192" kind="namespace"><name>faiss::@192</name>
   </compound>
   <compound refid="namespacefaiss_1_1_0d212" kind="namespace"><name>faiss::@212</name>
+  </compound>
+  <compound refid="namespacefaiss_1_1_0d216" kind="namespace"><name>faiss::@216</name>
   </compound>
   <compound refid="namespacefaiss_1_1_0d57" kind="namespace"><name>faiss::@57</name>
   </compound>
@@ -12818,6 +12837,8 @@
     <member refid="sq-dispatch_8h_1a18cda87f7f14bce99d80b0b2cf695df5" kind="function"><name>sq_select_InvertedListScanner&lt; THE_LEVEL_TO_DISPATCH &gt;</name></member>
     <member refid="training_8h_1a7832c78df26bd9df1561e07d4da31891" kind="function"><name>train_Uniform</name></member>
     <member refid="training_8h_1a034e56b144961f4bf96372b957fb0885" kind="function"><name>train_NonUniform</name></member>
+  </compound>
+  <compound refid="namespacefaiss_1_1simd__partitioning" kind="namespace"><name>faiss::simd_partitioning</name>
   </compound>
   <compound refid="namespacefaiss_1_1simd__result__handlers" kind="namespace"><name>faiss::simd_result_handlers</name>
     <member refid="simd__result__handlers_8h_1acb6c5a4f49c7e731d418a15fbe5f9bc9" kind="function"><name>with_SIMDResultHandler</name></member>
@@ -13461,6 +13482,13 @@
   </compound>
   <compound refid="IVFFlatScanner-inl_8h" kind="file"><name>IVFFlatScanner-inl.h</name>
     <member refid="IVFFlatScanner-inl_8h_1aa4e05f9f08dc770d3a5a2972334f9b19" kind="define"><name>DEFINE_IVFFLAT_SCANNER_METHODS</name></member>
+  </compound>
+  <compound refid="partitioning__simdlib256_8h" kind="file"><name>partitioning_simdlib256.h</name>
+    <member refid="partitioning__simdlib256_8h_1a3601954068ff2d3b5d249ab6b5ae8082" kind="define"><name>IFV</name></member>
+    <member refid="partitioning__simdlib256_8h_1a62387f87dae351b0f051f3a632838870" kind="define"><name>DISPATCH</name></member>
+    <member refid="partitioning__simdlib256_8h_1a62387f87dae351b0f051f3a632838870" kind="define"><name>DISPATCH</name></member>
+    <member refid="partitioning__simdlib256_8h_1a14a60133503bc69e06b3d7a00ee8be94" kind="variable"><name>min16</name></member>
+    <member refid="partitioning__simdlib256_8h_1a66e946a64000e761e027ad2bc10f8329" kind="variable"><name>max16</name></member>
   </compound>
   <compound refid="simd__levels_8h" kind="file"><name>simd_levels.h</name>
     <member refid="simd__levels_8h_1a8945b533221b1c3f6d70b4ef8c95d4f2" kind="define"><name>COMPILE_SIMD_NONE</name></member>
